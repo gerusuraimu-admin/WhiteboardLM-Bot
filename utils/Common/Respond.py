@@ -1,8 +1,10 @@
+import os
 import requests
 
 
 def respond(message: str, uid: str) -> str:
-    url = 'https://whiteboardlm-gemma-112923488803.asia-northeast1.run.app/query'
+    server = os.getenv('SERVER')
+    url = f'{server}/query'
 
     payload = {
         "message": message,

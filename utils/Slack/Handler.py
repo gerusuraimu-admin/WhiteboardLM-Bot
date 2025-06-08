@@ -1,7 +1,7 @@
 from slack_bolt import App
 from slack_bolt.adapter.socket_mode import SocketModeHandler
-from whiteboardlm.Common import respond
-from whiteboardlm.Slack import SlackEventObject
+from utils.Common import respond
+from utils.Slack import SlackEventObject
 
 
 def slack_start(slack_token: str, app_token: str, uid: str):
