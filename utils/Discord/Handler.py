@@ -1,7 +1,7 @@
 import discord
 from utils import get_logger
 from utils.Common import respond
-from utils.Discord import DiscordEventObject
+from utils.Discord.DiscordEventObject import DiscordEventObject
 
 
 def discord_start(token: str, uid: str):
